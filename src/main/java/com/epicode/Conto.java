@@ -31,4 +31,13 @@ public class Conto {
             System.out.println("Importo non valido per il deposito.");
         }
     }
+
+    public void preleva(double importo) {
+        if (importo > 0 && importo <= saldo) {
+            saldo -= importo;
+            System.out.println("Prelievo di " + importo + " effettuato. Nuovo saldo: " + saldo);
+        } else {
+            System.out.println("Importo non valido per il prelievo.");
+        }
+    }
 }
