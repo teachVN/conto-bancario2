@@ -40,4 +40,10 @@ public class Conto {
             System.out.println("Importo non valido per il prelievo.");
         }
     }
+
+    public void stampaDettagli() {
+        System.out.println("Numero conto: " + numeroConto);
+        System.out.println("Saldo: " + saldo);
+        System.out.println("Intestatario: " + intestatario);
+    }
 }
