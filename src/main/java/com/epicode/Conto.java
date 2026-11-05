@@ -42,7 +42,7 @@ public class Conto {
     }
 
     public void stampaDettagli() {
-        
+        System.out.println("Numero: " + numeroConto);
         System.out.println("bravo: " + intestatario);
     }
 }
