@@ -42,8 +42,7 @@ public class Conto {
     }
 
     public void stampaDettagli() {
-        System.out.println("Numero conto: " + numeroConto);
-        System.out.println("Saldo: " + saldo);
+        
         System.out.println("Intestatario: " + intestatario);
     }
 }
