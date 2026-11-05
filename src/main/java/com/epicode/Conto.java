@@ -43,6 +43,6 @@ public class Conto {
 
     public void stampaDettagli() {
         
-        System.out.println("Intestatario: " + intestatario);
+        System.out.println("bravo: " + intestatario);
     }
 }
