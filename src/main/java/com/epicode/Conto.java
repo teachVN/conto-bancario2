@@ -33,7 +33,7 @@ public class Conto {
     }
 
     public void preleva(double importo) {
-        if (importo > 0 && importo <= saldo) {
+        if (importo <= saldo) {
             saldo -= importo;
             System.out.println("Prelievo di " + importo + " effettuato. Nuovo saldo: " + saldo);
         } else {
