@@ -1,0 +1,30 @@
+# File temporanei e log
+*.log
+*.tmp
+*.swp
+
+# File di sistema
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# File di ambiente: non versionare segreti
+.env
+.env.*
+!.env.example
+
+# Dipendenze e artefatti di build comuni
+node_modules/
+dist/
+build/
+target/
+out/
+
+# Cache e report di test
+.cache/
+coverage/
+
+# Configurazioni di editor
+.idea/
+.vscode/
+.github/
