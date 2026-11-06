@@ -33,11 +33,14 @@ public class Conto {
     }
 
     public void preleva(double importo) {
-        if (importo <= saldo&& importo > 0) {
+        if(importo <= 0) {
+            System.out.println("Importo non valido per il prelievo.");
+        } else
+        if (importo <= saldo) {
             saldo -= importo;
             System.out.println("Prelievo di " + importo + " effettuato. Nuovo saldo: " + saldo);
         } else {
-            System.out.println("Importo non valido per il prelievo.");
+            System.out.println("Importo maggiore del saldo disponibile.");
         }
     }
 
@@ -49,4 +52,9 @@ public class Conto {
         System.out.println("Intestatario: " + intestatario);
 
     }
+
+    @Override
+    public String toString() {
+        return "Conto [numeroConto=" + numeroConto + ", saldo=" + saldo + ", intestatario=" + intestatario + "]";
+    }   
 }
