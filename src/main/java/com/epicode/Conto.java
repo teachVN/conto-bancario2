@@ -49,4 +49,14 @@ public class Conto {
         System.out.println("Intestatario: " + intestatario);
 
     }
+
+    public void trasferisci(Conto destinatario, double importo) {
+        if (importo <= saldo && importo > 0) {
+            saldo -= importo;
+            destinatario.deposita(importo);
+            System.out.println("Trasferimento di " + importo + " effettuato a " + destinatario.getIntestatario() + ". Nuovo saldo: " + saldo);
+        } else {
+            System.out.println("Importo non valido per il trasferimento.");
+        }
+    }
 }
